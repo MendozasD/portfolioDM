@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEAE4;
+}
+
+.container {
+  z-index: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  .content {
+    width: 80%;
+    height: 80%;
+    margin: 10vh auto;
+    border: solid black 1.5px;
+    border-radius: 30px;
+    font-family: 'Clash Display', sans-serif;
+    .main {
+      position: relative;
+      background-color: transparent;
+      display: grid;
+      top: 20px;
+      left: 20px;
+      width: 80%;
+      h1 {
+        max-inline-size: min-content;
+        font-weight: 500;
+        line-height: 60%;
+        font-size: 4rem;
+        margin-bottom: 20px;
+        border-bottom: 2px solid;
+        padding-bottom: 20px;
+        background-color: transparent;
+      }
+      p {
+        display: block;
+        background-color: transparent;
+      }
+    }
+  .gus {
+    position: absolute;
+    display: flex;
+    margin: -20% auto;
+  }
+  }
+}
