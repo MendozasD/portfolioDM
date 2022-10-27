@@ -1,47 +1,66 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #EEEAE4;
 }
 
 .container {
-  z-index: 0;
+  background-color: #EEEAE4;
+  display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   .content {
+    display: flex;
+    margin: 0 auto;
     width: 80%;
     height: 80%;
-    margin: 10vh auto;
     border: solid black 1.5px;
     border-radius: 30px;
     font-family: 'Clash Display', sans-serif;
-    .main {
-      position: relative;
-      background-color: transparent;
-      display: grid;
-      top: 20px;
-      left: 20px;
-      width: 80%;
-      h1 {
-        max-inline-size: min-content;
-        font-weight: 500;
-        line-height: 60%;
-        font-size: 4rem;
-        margin-bottom: 20px;
-        border-bottom: 2px solid;
-        padding-bottom: 20px;
-        background-color: transparent;
+    .title, .profile {
+      height: fit-content;
+      width: 30%;
+      margin: 5vh;
+    }
+    .title {
+      line-height: 0.5;
+      font-weight: 500;
+      font-size: 3.5rem;
+    }
+    .gus {
+      margin: -8vh auto;
+    }
+    .profile {
+      text-align: right;
+      place-self: end;
+      border-top: solid 1.5px;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container {
+    .content {
+      flex-direction: column;
+      border: none;
+      height: 100vh;
+      gap: 10%;
+      .title, .profile {
+        margin: 10% auto;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
       }
-      p {
-        display: block;
-        background-color: transparent;
+      .title {
+        font-size: 4rem;
+      }
+      .profile {
+        font-size: 1.5rem;
+      }
+      .gus {
+        width: 95%;
       }
     }
-  .gus {
-    position: absolute;
-    display: flex;
-    margin: -20% auto;
-  }
   }
 }
