@@ -17,24 +17,12 @@
     border: solid black 1.5px;
     border-radius: 30px;
     font-family: 'Clash Display', sans-serif;
-    .title, .profile {
-      height: fit-content;
+    .right-content,
+    .left-content {
       width: 30%;
-      margin: 5vh;
-    }
-    .title {
-      line-height: 0.5;
-      font-weight: 500;
-      font-size: 3.5rem;
     }
     .gus {
       margin: -8vh auto;
-    }
-    .profile {
-      text-align: right;
-      place-self: end;
-      border-top: solid 1.5px;
-      padding-top: 5px;
     }
   }
 }
