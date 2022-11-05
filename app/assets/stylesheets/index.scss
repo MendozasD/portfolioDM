@@ -3,52 +3,59 @@
   padding: 0;
 }
 
-.container {
+body {
   background-color: #EEEAE4;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  .content {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    height: 80%;
-    border: solid black 1.5px;
-    border-radius: 30px;
-    font-family: 'Clash Display', sans-serif;
-    .right-content,
-    .left-content {
-      width: 30%;
-    }
-    .gus {
-      margin: -8vh auto;
-    }
-  }
+  font-family: 'Clash Display', sans-serif;
 }
 
-@media only screen and (max-width:768px) {
-  .container {
-    .content {
-      flex-direction: column;
-      border: none;
-      height: 100vh;
-      gap: 10%;
-      .title, .profile {
-        margin: 10% auto;
-        z-index: 2;
-        height: 100%;
-        width: 100%;
+.container {
+  .content {
+    padding: 5%;
+    height: 90vh;
+    width: 80vw;
+
+    // Center alignment
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .right-content {
+      display: grid;
+      align-content: center;
+      width: 90%;
+      height: 25%;
+      gap: 10px;
+      #logo {
+        font-size: 3rem;
+        line-height: 0.4;
+        border-bottom: 1px solid;
+        padding-bottom: 20px;
+        font-weight: 500;
+        .l-name {
+          transition: mix-blend-mode 0.5s;
+          mix-blend-mode: overlay;
+        }
+        .l-name:hover {
+          mix-blend-mode: unset;
+        }
       }
-      .title {
-        font-size: 4rem;
+      p {
+        text-align: right;
       }
-      .profile {
-        font-size: 1.5rem;
-      }
-      .gus {
+
+    }
+    .image-container {
+      height: 75%;
+      text-align: center;
+      #gus {
+        object-fit: contain;
+        height: 90%;
         width: 95%;
       }
     }
   }
+}
+
+@media only screen and (min-width: 768px) {
 }

@@ -1,14 +1,25 @@
 <div class="container">
   <div class="content">
     <section class="right-content">
-      <h1>David <br> Mendoza</h1>
-      <p>Web Developer</p>
-      <p>info@davidmendoza.ch</p>
+      <div id="logo">
+        <text-area class="f-name">David </text-area>
+        <br>
+        <text-area class="l-name">Mendoza</text-area>
+      </div>
+
+      <p>
+        Web Developer
+        <br>
+        info@davidmendoza.ch
+      </p>
     </section>
 
     <%# Middle illustration %>
-    <%= image_tag 'gus.png', class: 'gus'%>
+    <section class="image-container">
+      <%= image_tag 'gus.png', id: 'gus'%>
+    </section>
 
+    <%# Right empty space %>
     <section class="left-content">
     </section>
 </div>
