@@ -42,12 +42,11 @@ body {
         padding-bottom: 20px;
         font-weight: 500;
         .l-name {
-          transition: mix-blend-mode 0.5s;
-          mix-blend-mode: overlay;
-          transition: mix-blend-mode 0.5s ease;
+          transition: opacity ease 0.3s;
+          opacity: 0.3;
         }
         .l-name:hover {
-          mix-blend-mode: unset;
+          opacity: 1;
         }
       }
       p {
