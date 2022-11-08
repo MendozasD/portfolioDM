@@ -2,18 +2,17 @@
   <div class="content">
 
     <%# Left-main content area %>
-    <section class="left-content animate__animated animate__fadeInUp">
+    <section class="left-content">
       <div id="logo">
         <text-area class="f-name">David </text-area>
         <br>
         <text-area class="l-name">Mendoza</text-area>
       </div>
 
-      <p>
-        Web Developer
-        <br>
-        info@davidmendoza.ch
-      </p>
+      <div class="inquiries">
+        <p>Web Developer</p>
+        <p class="mail"><%= mail_to "info@davidmendoza.ch", 'Inquiries' %></p>
+      </div>
     </section>
 
     <%# Middle illustration %>

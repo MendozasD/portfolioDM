@@ -49,8 +49,25 @@ body {
           opacity: 1;
         }
       }
-      p {
+      .inquiries {
         text-align: right;
+        width: fit-content;
+        justify-self: flex-end;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        a::after {
+          content: '';
+          width: 0px;
+          height: 1px;
+          display: block;
+          background: black;
+          transition: 300ms;
+        }
+        a:hover::after {
+          width: 100%;
+        }
       }
     }
     .image-container {
