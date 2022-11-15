@@ -1,26 +1,14 @@
 <div class="container">
-  <div class="content">
+  <nav>
+    <%= image_tag("sun", alt: "logo") %>
+  </nav>
+  <div id="content">
 
-    <%# Left-main content area %>
-    <section class="left-content">
-      <div id="logo">
-        <text-area class="f-name">David </text-area>
-        <br>
-        <text-area class="l-name">Mendoza</text-area>
-      </div>
-
-      <div class="inquiries">
-        <p>Web Developer</p>
-        <p class="mail"><%= mail_to "info@davidmendoza.ch", 'Inquiries' %></p>
-      </div>
+    <section class="text">
+      <h2>¡Hola! I’m <b>David</b><i>.</i> <br> I make websites<i>,</i> apps & illustrations<i>.</i></h2>
+      <svg id="layer_1" data-name="Layer 1" viewBox="0 0 885.55 218.89">
+        <path class="cls-1" d="M36.66,183.89C21.37,87.02,110.89-21.91,341.58,69.29c240.46,95.05,542.9,148.54,505.87-15.43"/>
+      </svg>
     </section>
-
-    <%# Middle illustration %>
-    <section class="image-container">
-      <%= image_tag 'gus.png', id: 'gus'%>
-    </section>
-
-    <%# Right empty space %>
-    <section class="right-content">
-    </section>
+  </div>
 </div>

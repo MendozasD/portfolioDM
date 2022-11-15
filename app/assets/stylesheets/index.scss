@@ -9,100 +9,41 @@ body {
   font-family: 'Clash Display', sans-serif;
 }
 
-.container {
+nav {
   display: flex;
-  height: 100vh;
-  align-items: center;
   justify-content: center;
-  .content {
-    border: 2px solid;
-    border-radius: 30px;
-    margin: 0 auto;
+  height: 7vh;
 
-    height: 80%;
-    width: 80%;
+  margin-top: 5%;
+}
 
-    // Center alignment
+#content {
+  display: flex;
+  justify-content: center;
+  .text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    transition: box-shadow 0.5s ease;
-    .left-content {
-      display: grid;
-      align-content: center;
-      width: 90%;
-      height: 25%;
-      gap: 10px;
-      padding: 2%;
-      #logo {
-        font-size: 3rem;
-        line-height: 0.4;
-        border-bottom: 1.5px solid;
-        padding-bottom: 20px;
-        font-weight: 500;
-        .l-name {
-          transition: opacity ease 0.3s;
-          opacity: 0.3;
-        }
-        .l-name:hover {
-          opacity: 1;
-        }
-      }
-      .inquiries {
-        text-align: right;
-        width: fit-content;
-        justify-self: flex-end;
-        a {
-          text-decoration: none;
-          color: black;
-        }
-        a::after {
-          content: '';
-          width: 0px;
-          height: 1px;
-          display: block;
-          background: black;
-          transition: 300ms;
-        }
-        a:hover::after {
-          width: 100%;
-        }
+    width: 80%;
+    height: 30vh;
+    h2 {
+      align-self: center;
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: #6a3813;
+      i {
+        color: #ffa900;
       }
     }
-    .image-container {
-      height: 75%;
-      text-align: center;
-      #gus {
-        object-fit: contain;
-        height: 90%;
-        width: 95%;
-      }
-    }
-  }
-}
-
-.container {
-  .content:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    .content {
-      flex-direction: row;
-      justify-content: center;
-      .left-content, .right-content {
-        width: 30%;
-      }
-      .image-container {
-        height: 120%;
-        display: flex;
-        align-items: center;
-        #gus {
-          height: 100%;
-        }
+    #layer_1 {
+      width: fit-content;
+      position: absolute;
+      align-self: center;
+      z-index: -1;
+      .cls-1 {
+        fill: none;
+        stroke: #ffa900;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 70px;
       }
     }
   }
