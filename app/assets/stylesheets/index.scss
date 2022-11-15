@@ -20,10 +20,13 @@ nav {
 #content {
   display: flex;
   justify-content: center;
-  .text {
+  flex-direction: column;
+  align-items: center;
+  #intro-path {
     display: flex;
     width: 80%;
     height: 30vh;
+    justify-content: center;
     h2 {
       align-self: center;
       font-size: 1.9rem;
@@ -33,17 +36,39 @@ nav {
         color: #ffa900;
       }
     }
-    #layer_1 {
+    #yellow-path {
       width: fit-content;
       position: absolute;
       align-self: center;
       z-index: -1;
-      .cls-1 {
+      .path-1 {
         fill: none;
         stroke: #ffa900;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 70px;
+      }
+    }
+  }
+  #frame-picture {
+    display: flex;
+    width: 80%;
+
+    .flo-pic {
+      width: 85%;
+      z-index: 1;
+    }
+    #frame-layer {
+      position: absolute;
+      z-index: -1;
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+      .sew {
+        stroke-dasharray: 5 10 15;
       }
     }
   }
