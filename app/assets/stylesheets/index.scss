@@ -14,7 +14,7 @@ nav {
   justify-content: center;
   height: 50px;
   padding: 20px 0;
-  #rotate-sun-container {
+  #rotating-sun {
     animation: rotation 15s infinite linear;
     @keyframes rotation {
       from {
@@ -36,9 +36,18 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
   height: calc(100vh - 90px);
-  #intro-path {
+
+  // **** SVG Complement ****
+  .content-path{
+    display: none;
+    z-index: -1;
+    width: 70%;
+    position: absolute;
+    align-self: center;
+  }
+
+  #intro-container {
     display: flex;
     width: 80%;
     justify-content: center;
@@ -51,18 +60,12 @@ nav {
         color: #ffa900;
       }
     }
-    #yellow-path {
-      width: fit-content;
+    // **** SVG Complement ****
+    .intro-path {
+      z-index: -1;
+      width: 70%;
       position: absolute;
       align-self: center;
-      z-index: -1;
-      .path-1 {
-        fill: none;
-        stroke: #ffa900;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-width: 70px;
-      }
     }
   }
   #frame-container {
@@ -91,11 +94,26 @@ nav {
       }
     }
   }
+
 }
 
 @media (min-width:801px) {
   #content {
     display: flex;
     flex-direction: row;
+    .content-path {
+      display: inline;
+      width: 100%;
+    }
+    #frame-container {
+      #frame-mesh {
+        width: 50%;
+      }
+    }
+    #intro-container {
+      .intro-path {
+        display: none;
+      }
+    }
   }
 }

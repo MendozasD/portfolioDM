@@ -1,13 +1,9 @@
-// Rotate animation!!!!
-  // animation: rotation 10s infinite linear;
-  // @keyframes rotation {
-  //   from {
-  //     transform: rotate(0deg);
-  //   }
-  //   to {
-  //     transform: rotate(359deg);
-  //   }
-  // }
-
-  // Fonts:
-  // font-family: 'Clash Display', sans-serif;
+#yellow-path {
+  .path-1 {
+    fill: none;
+    stroke: #ffa900;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 70px;
+  }
+}
