@@ -1,10 +1,14 @@
 .pop-corner {
+  fill: #ffa900;
   position: fixed;
-  background-color: #ffa900;
-  height: 100px;
-  width: 100px;
   right: 0;
   bottom: 0;
-  border-radius: 100% 0 0 0;
-  font-size: 1rem;
+  width: 100px;
+  overflow: visible;
+  text {
+    .corner-pop-text {
+      font-size: 4rem;
+      fill: #6a3813;
+    }
+  }
 }
