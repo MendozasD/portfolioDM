@@ -3,10 +3,25 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 150px;
+  width: 100px;
   overflow: visible;
   text {
     .corner-pop-text {
+      font-size: 4rem;
+      fill: #6a3813;
+    }
+  }
+}
+
+.circle-pop {
+  fill: #ffa900;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  overflow: visible;
+  text {
+    .circle-pop-text {
       font-size: 4rem;
       fill: #6a3813;
     }

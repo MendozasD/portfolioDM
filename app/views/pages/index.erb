@@ -1,17 +1,17 @@
 <div class="container">
   <nav>
-    <%= embedded_svg('rotating-sun') %>
+    <%= embedded_svg('svg/rotating-sun') %>
   </nav>
   <div id="content">
     <%# SVG, Single yellow path %>
-    <%= embedded_svg('yellow-path', class:"content-path") %>
+    <%= embedded_svg('svg/yellow-path', class:"content-path") %>
 
     <section id="intro-container">
       <%# Introduction %>
       <h2>¡Hola! I<i>'</i>m <b>David</b><i>.</i> <br> I create websites<i>,</i> apps & illustrations<i>.</i></h2>
 
       <%# SVG, Single yellow path %>
-      <%= embedded_svg('yellow-path', class:"intro-path") %>
+      <%= embedded_svg('svg/yellow-path', class:"intro-path") %>
 
     </section>
 
@@ -20,10 +20,13 @@
       <%= image_tag("flo_david.jpg", class:"flower-picture") %>
 
       <%# SVG Framing picture %>
-      <%= embedded_svg('frame-mesh') %>
+      <%= embedded_svg('svg/frame-mesh') %>
 
     </section>
 
   </div>
 </div>
-<%= embedded_svg('corner-pop') %>
+
+<%= mail_to "hello@davidmendoza.ch" do %>
+  <%= embedded_svg('svg/circle-pop') %>
+<% end %>

@@ -15,6 +15,7 @@ nav {
   height: 50px;
   padding: 20px 0;
   #rotating-sun {
+    // Rotation effect
     animation: rotation 15s infinite linear;
     @keyframes rotation {
       from {
