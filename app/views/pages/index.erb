@@ -1,14 +1,19 @@
 <div class="container">
   <nav>
-    <%= embedded_svg('svg/rotating-sun') %>
+    <%= link_to root_path do %>
+      <div>
+        <%= embedded_svg('svg/rotating-sun') %>
+      </div>
+    <% end %>
   </nav>
+
   <div id="content">
     <%# SVG, Single yellow path %>
     <%= embedded_svg('svg/yellow-path', class:"content-path") %>
 
     <section id="intro-container">
       <%# Introduction %>
-      <h2>¡Hola! I<i>'</i>m <b>David</b><i>.</i> <br> I create websites<i>,</i> apps & illustrations<i>.</i></h2>
+      <h2>Hello! I<i>'</i>m <b>David</b><i>.</i> <br> I create websites<i>,</i> apps & illustrations<i>.</i></h2>
 
       <%# SVG, Single yellow path %>
       <%= embedded_svg('svg/yellow-path', class:"intro-path") %>

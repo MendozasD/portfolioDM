@@ -14,6 +14,9 @@ nav {
   justify-content: center;
   height: 50px;
   padding: 20px 0;
+  div {
+    width: 50px;
+  }
   #rotating-sun {
     // Rotation effect
     animation: rotation 15s infinite linear;
@@ -29,6 +32,10 @@ nav {
   .logo-star {
     fill: #ffa900;
     stroke-miterlimit: 10;
+    &:hover {
+      stroke-width: 1px;
+      stroke: black;
+    }
   }
 }
 
@@ -79,19 +86,19 @@ nav {
 
     .flower-picture {
       width: 75%;
-      border-radius: 45px;
+      border-radius: 100px;
       z-index: 0;
     }
     #frame-mesh {
       // Center positioning
       position: absolute;
-      z-index: -1;
+      z-index: 0;
       top: 0;
       bottom: 0;
       margin: auto 0;
       .cls-1 {
         fill: none;
-        stroke: #000;
+        stroke: #B6B6B6;
         stroke-miterlimit: 10;
         stroke-width: 1px;
       }

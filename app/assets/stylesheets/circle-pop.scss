@@ -6,7 +6,7 @@
   bottom: -100px;
 
   // Rotation effect ↓
-  animation: rotation 15s infinite linear;
+  animation: rotation 15s infinite linear reverse;
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -25,6 +25,9 @@
     stroke: #000;
     stroke-width: .25px;
   }
+  .blue {
+    fill: blue;
+  }
 }
 
 .circle-pop:hover {
@@ -33,5 +36,8 @@
   }
   .circle-text {
     fill: blue;
+  }
+  .blue {
+    fill: none;
   }
 }
