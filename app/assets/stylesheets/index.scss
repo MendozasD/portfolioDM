@@ -110,6 +110,9 @@ nav {
 }
 
 @media (min-width:801px) {
+  nav {
+    padding: 20px 0;
+  }
   #content {
     display: flex;
     flex-direction: row;
