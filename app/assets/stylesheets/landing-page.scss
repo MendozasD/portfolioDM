@@ -45,7 +45,8 @@
   }
 }
 
-@media screen and (min-device-width: 667px) and (max-device-height: 375px){
+// This hides the picture in landscape mode to avoid cramping.
+@media screen and (min-device-width: 667px) and (max-device-height: 390px){
   .container {
     .flower-pic {
       display: none;
