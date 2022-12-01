@@ -1,0 +1,15 @@
+// Hello spin animation (stil doubting)
+#word-spin {
+  &::after {
+    content: "";
+    animation: spin 5s linear infinite;
+  }
+}
+@keyframes spin {
+  0% { content:"¡Hola!";}
+  20% { content:"Hallo!";}
+  40% { content:"Hey!";}
+  60% { content:"Hello";}
+  80% { content: "Grüezi";}
+  95% { content: "Hoi!";}
+}

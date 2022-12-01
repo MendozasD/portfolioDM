@@ -6,135 +6,81 @@
 body {
   background-color: #ffffff;
   background-image: url("egg-shell-texture.png");
-  font-family: 'Clash Display', sans-serif;
+  // font-family: 'Clash Display', sans-serif;
+  font-family: 'Bonny', serif;
 }
 
-nav {
+#background-stars {
   display: flex;
-  justify-content: center;
-  height: 50px;
-  padding: 20px 0 0 0;
-  div {
-    width: 50px;
-  }
-  #rotating-sun {
-    // Rotation effect
-    animation: rotation 15s infinite linear;
-    @keyframes rotation {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
-    }
-  }
-  .logo-star {
-    fill: #ffa900;
-    stroke-miterlimit: 10;
-    &:hover {
-      stroke-width: 1px;
-      stroke: black;
-    }
-  }
-}
-
-#content {
-  display: flex;
+  z-index: -1;
+  position: absolute;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: calc(100vh - 150px);
-
-  // **** SVG Complement as background image ****
-  .content-path{
-    display: none;
-    z-index: -1;
-    width: 70%;
-    position: absolute;
-    align-self: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  .border-star {
+    margin: 20px 0;
+    height: 50px;
   }
-
-  #intro-container {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    h2 {
-      align-self: center;
-      font-size: 1.9rem;
-      font-weight: 500;
-      color: #6a3813;
-      width: inherit;
-      i {
-        color: #ffa900;
-      }
-    }
-    // **** SVG Complement ****
-    .intro-path {
-      z-index: -1;
-      width: 70%;
-      position: absolute;
-      align-self: center;
+  #stars-main-path {
+    .star {
+      fill: #ffb400;
     }
   }
+}
 
-  #frame-container {
+.container {
+  display: grid;
+  height: 100vh;
+  .main-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 80%;
-    position: relative;
-
-    .flower-picture {
-      width: 75%;
-      border-radius: 100px;
-      z-index: 0;
-    }
-    #frame-mesh {
-      // Center positioning
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      .cls-1 {
-        fill: none;
-        stroke: #B6B6B6;
-        stroke-miterlimit: 10;
-        stroke-width: 1px;
+    z-index: 1;
+    color: #2d5d7b;
+    .name-logo {
+      text-align: center;
+      h1 {
+        font-size: 3rem;
       }
-      .sew {
-        stroke-dasharray: 5 10 15;
+      p {
+        font-size: 1.5rem;
+        margin-top: -20px;
+      }
+    }
+    .flower-pic {
+      margin-top: 30px;
+      width: 250px;
+      border-radius: 150px 150px 0 0;
+    }
+    .mail-button {
+      font-size: 2rem;
+      width: fit-content;
+      margin-top: 30px;
+      padding: 0 15px;
+      border: solid #2d5d7b 1px;
+      border-radius: 50px;
+      transition: background-color .5s ease-out;
+      a {
+        text-decoration: none;
+        color: #2d5d7b;
+      }
+      &:hover {
+        background-color: #2d5d7b;
+        a {
+          color: whitesmoke;
+        }
       }
     }
   }
 }
 
-@media (min-width:801px) {
-  nav {
-    padding: 20px 0;
-  }
-  #content {
-    display: flex;
-    flex-direction: row;
-    .content-path {
-      display: inline;
-      width: 80%;
-    }
-    #intro-container {
-      width: 50%;
-      .intro-path {
-        display: none;
-      }
-      h2 {
-        font-size: 5rem;
-        font-weight: 400;
-      }
-    }
-    #frame-container {
-      width: 40%;
-      .flower-picture {
-        width: 70%;
-      }
+@media screen and (min-device-width: 667px) and (max-device-height: 375px){
+  .container {
+    .flower-pic {
+      display: none;
     }
   }
 }
