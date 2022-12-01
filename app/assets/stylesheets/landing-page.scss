@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  height: 100vh;
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #2d5d7b;
+    .name-logo {
+      text-align: center;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+        margin-top: -20px;
+      }
+    }
+    .flower-pic {
+      margin-top: 30px;
+      width: 250px;
+      border-radius: 150px 150px 0 0;
+    }
+    .mail-button {
+      font-size: 2rem;
+      width: fit-content;
+      margin-top: 30px;
+      padding: 0 15px;
+      border: solid #2d5d7b 1px;
+      border-radius: 50px;
+      transition: background-color .5s ease-out;
+      a {
+        text-decoration: none;
+        color: #2d5d7b;
+      }
+      &:hover {
+        background-color: #2d5d7b;
+        a {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 667px) and (max-device-height: 375px){
+  .container {
+    .flower-pic {
+      display: none;
+    }
+  }
+}
