@@ -21,31 +21,28 @@
     .flower-pic {
       margin-top: 30px;
       width: 250px;
-      border-radius: 150px 150px 0 0;
     }
     .mail-button {
       font-size: 2rem;
       width: fit-content;
       margin-top: 30px;
       padding: 0 15px;
-      border: solid #2d5d7b 1px;
-      border-radius: 50px;
-      transition: background-color .5s ease-out;
+      transition: text-decoration .5s ease-out;
+      border-radius:20px;
+      border-bottom: transparent 2px solid;
       a {
         text-decoration: none;
         color: #2d5d7b;
       }
       &:hover {
-        background-color: #2d5d7b;
-        a {
-          color: whitesmoke;
-        }
+        // text-decoration: underline #2d5d7b 2px;
+        border-bottom: solid 2px #2d5d7b;
       }
     }
   }
 }
 
-// This hides the picture in landscape mode to avoid cramping.
+// Hiding picture in landscape mode to avoid cramping.
 @media screen and (min-device-width: 667px) and (max-device-height: 390px){
   .container {
     .flower-pic {

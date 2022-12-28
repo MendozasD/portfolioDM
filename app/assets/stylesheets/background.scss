@@ -20,6 +20,8 @@
 
 .logo-name {
   align-items: center;
+  display: flex;
+  text-align: center;
   .one-star {
     margin: 0 -70px;
     height: 25px;
@@ -27,15 +29,15 @@
       fill: #ffb400;
     }
   }
-  display: flex;
-  text-align: center;
-  color: #2d5d7b;
-  h1 {
+  a {
+    color: #2d5d7b;
     font-size: 3rem;
     white-space: nowrap;
+    text-decoration: none;
   }
   p {
     font-size: 1.5rem;
     margin-top: -15px;
+    color: #2d5d7b;
   }
 }
